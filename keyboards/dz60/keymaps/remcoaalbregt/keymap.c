@@ -12,7 +12,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * |-----------------------------------------------------------------------------------------+
    * | Caps    |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |    Enter    |
    * |-----------------------------------------------------------------------------------------+
-   * | Shift     |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  /  | RSh |  U  | DEL |
+   * | Shift     |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  /  | RSh |  U  | FN2 |
    * |-----------------------------------------------------------------------------------------+
    * | Ctrl |  Cmd  |  Alt  |              Space                | RAlt | FN  |  L  |  D  |  R  |
    * `-----------------------------------------------------------------------------------------'
@@ -28,11 +28,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   /* FN Layer
    * ,-----------------------------------------------------------------------------------------.
-   * | Esc |  F1 |  F2 |  F3 |  F4 |  F5 |  F6 |  F7 |  F8 |  F9 | F10 | F11 | F12 |   RESET   |
+   * | Esc |  F1 |  F2 |  F3 |  F4 |  F5 |  F6 |  F7 |  F8 |  F9 | F10 | F11 | F12 |   Delete  |
    * |-----------------------------------------------------------------------------------------+
-   * |        | HYP Q| HYP W| HYP E| HYP R| HYP T| HYP Y| HYP U| HYP I| HYP O| HYP P|    |    |    |
+   * |      | HYP Q| HYP W| HYP E| HYP R| HYP T| HYP Y| HYP U| HYP I| HYP O| HYP P|   |   |    |
    * |-----------------------------------------------------------------------------------------+
-   * |         | HYP A| HYP S| HYP D| HYP F|     |     |     |     |     |     |     |             |
+   * |         | HYP A| HYP S| HYP D| HYP F|     |     |     |     |     |     |     |         |
    * |-----------------------------------------------------------------------------------------+
    * |           |     |     |     |     |     |     |     |     |     |     |     |     |     |
    * |-----------------------------------------------------------------------------------------+
@@ -41,7 +41,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    */
 
   LAYOUT_directional(
-      KC_GRV,KC_F1,KC_F2,KC_F3,KC_F4,KC_F5,KC_F6,KC_F7,KC_F8,KC_F9,KC_F10,KC_F11,KC_F12,KC_TRNS,RESET,
+      KC_GRV,KC_F1,KC_F2,KC_F3,KC_F4,KC_F5,KC_F6,KC_F7,KC_F8,KC_F9,KC_F10,KC_F11,KC_F12,KC_TRNS,KC_DELETE,
       KC_NO,HYPR(KC_Q),HYPR(KC_W),HYPR(KC_E),HYPR(KC_R),HYPR(KC_T),HYPR(KC_Y),HYPR(KC_U),HYPR(KC_I),HYPR(KC_O),HYPR(KC_P),HYPR(KC_LBRC),HYPR(KC_RBRC),KC_NO,
       KC_NO,HYPR(KC_A),HYPR(KC_NO),HYPR(KC_NO),HYPR(KC_NO),HYPR(KC_NO),HYPR(KC_NO),HYPR(KC_NO),HYPR(KC_NO),HYPR(KC_L),HYPR(KC_SCLN),HYPR(KC_QUOT),KC_NO,
       KC_NO,HYPR(KC_Z),HYPR(KC_NO),HYPR(KC_NO),HYPR(KC_NO),HYPR(KC_NO),HYPR(KC_NO),HYPR(KC_M),HYPR(KC_COMM),HYPR(KC_DOT),KC_QUES,KC_QUES,KC_PGUP,KC_NO,
